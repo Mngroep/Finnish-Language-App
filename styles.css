@@ -1,0 +1,535 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu Styling */
+#menu {
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#menu-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+#story-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.story-button {
+    background-color: #ffe6f0;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.story-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.story-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.story-button span {
+    display: block;
+    font-size: 1.2em;
+    color: #d6336c;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+.achieve-button {
+    display: block;
+    margin: 20px auto 0 auto;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #66c2ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.achieve-button:hover {
+    background-color: #3399ff;
+}
+
+/* Story Container */
+.story-container {
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+/* Story Title */
+.story-title {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: #d6336c;
+    font-size: 2em;
+    margin: 0 0 15px 0;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Story Image */
+.story-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #ff99cc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Score Box */
+.score-box {
+    background-color: #ffe6f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 15px 0;
+    text-align: center;
+    border: 2px dashed #ff99cc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score-label, .mistakes-label {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #d6336c;
+    margin: 5px;
+}
+
+.score-progress {
+    width: 100%;
+    height: 25px;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+    border: none;
+    margin-top: 5px;
+}
+
+.score-progress::-webkit-progress-value {
+    background-color: #66c2ff;
+    border-radius: 12px;
+}
+
+.score-progress::-moz-progress-bar {
+    background-color: #66c2ff;
+    border-radius: 12px;
+}
+
+/* Story Text */
+.story-text {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+/* Clickable Words */
+.clickable-word {
+    cursor: pointer;
+    transition: color 0.3s ease, font-weight 0.3s ease, background-color 0.3s ease;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.clickable-word:hover {
+    background-color: #e0e0e0;
+}
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Story Buttons (Next) */
+.story-button {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    background-color: #73e58e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.story-button:hover {
+    background-color: #a6e4b3;
+    transform: scale(1.05);
+}
+
+/* Quiz Box */
+.quiz-box {
+    background-color: #ffe6e6;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff99cc;
+}
+
+.quiz-box {
+    background-color: #ffe6e6;
+    padding: 15px; /* Reduced from 20px */
+    border-radius: 15px;
+    margin: 20px 0; /* Reduced from 30px */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ff99cc;
+}
+
+.quiz-form {
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px; /* Reduced space */
+}
+
+.quiz-form label {
+    display: block;
+    margin: 5px 0; /* Tightened spacing */
+    font-size: 1.1em;
+    color: #333;
+}
+
+.quiz-submit {
+    padding: 8px 20px; /* Slightly smaller */
+    font-size: 1em;
+    background-color: #66c2ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 10px auto 0; /* Reduced top margin */
+}
+
+.quiz-submit:hover {
+    background-color: #3399ff;
+}
+
+.quiz-results {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #d6336c;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #menu-logo {
+        max-width: 150px;
+    }
+
+    .home-logo {
+        max-width: 80px;
+    }
+
+    #menu, .story-container, #end-screen {
+        margin-top: 100px;
+    }
+
+    .story-button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #story-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story-container {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .story-title {
+        font-size: 1.5em;
+    }
+
+    .story-text {
+        font-size: 1em;
+        padding: 15px;
+    }
+
+    .score-progress {
+        height: 20px;
+    }
+
+    .score-box {
+        flex-direction: column;
+    }
+
+    .score-label, .mistakes-label {
+        font-size: 1.1em;
+    }
+
+    .story-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .quiz-header {
+        font-size: 1.4em;
+    }
+
+    .quiz-form label {
+        font-size: 1em;
+    }
+}
+
+/* Fixed Header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff0f5;
+    padding: 10px 0;
+    z-index: 1000; /* Ensures it stays on top */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100px; /* Smaller for fixed header */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.home-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Adjust content to avoid overlap with fixed header */
+#menu, .story-container, #end-screen {
+    margin-top: 120px; /* Space for fixed header */
+}
+
+/* Sub-Menu Styling */
+/* Ensure sub-menus are visible and positioned correctly */
+.submenu-container {
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 120px auto 20px auto;
+    position: relative;
+    z-index: 20; /* Increased to ensure it’s above story-content */
+    min-height: 200px; /* Ensure it has space to show */
+    visibility: visible; /* Explicitly visible */
+    opacity: 1; /* Ensure not faded out */
+}
+
+#story1-submenu, #story2-submenu {
+    display: none; /* Default hidden, controlled by JS */
+}
+
+#story1-section-buttons, #story2-section-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    min-height: 100px;
+    background-color: #f0f0f0; /* Debug visibility */
+}
+
+.submenu-title {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: #d6336c;
+    font-size: 1.8em;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.section-button {
+    background-color: #ffe6f0;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.section-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section-button.completed {
+    background-color: #ccffcc; /* Light green for completed */
+    border-color: #28a745;
+}
+
+.section-button span {
+    display: block;
+    font-size: 1.1em;
+    color: #d6336c;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+.back-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    font-size: 1em;
+    background-color: #66c2ff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #3399ff;
+}
+
+.completion-mark {
+    display: block;
+    font-size: 0.9em;
+    color: #28a745; /* Green for completion */
+    margin-top: 5px;
+}
+
+/* Responsive Design Updates */
+@media (max-width: 600px) {
+    .section-button {
+        width: 120px;
+    }
+
+    .submenu-title {
+        font-size: 1.5em;
+    }
+}
+
+/* Achievements Page Styling */
+.achievements-container {
+    background-color: #fff0f5;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 120px auto 20px auto; /* Match fixed header spacing */
+}
+
+.achievements-title {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: #d6336c;
+    font-size: 2em;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+#achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.achievement {
+    background-color: #ffe6f0;
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.achievement.unlocked {
+    background-color: #ccffcc; /* Light green for unlocked */
+    border-color: #28a745;
+}
+
+.achievement h3 {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    color: #d6336c;
+    font-size: 1.4em;
+    margin: 0 0 10px 0;
+}
+
+.achievement p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+.achievement .status {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    color: #666;
+}
+
+.achievement.unlocked .status {
+    color: #28a745; /* Green for unlocked */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .achievement {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .achievements-title {
+        font-size: 1.6em;
+    }
+}

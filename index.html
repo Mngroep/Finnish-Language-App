@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finnish Learning App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <img id="home-logo" src="images/logo.jpg" alt="Home" class="home-logo" onclick="returnToMenu()">
+    </header>
+
+    <div id="menu">
+        <div id="story-buttons">
+            <button id="story1" class="story-button">
+                <img src="images/section1.jpg" alt="Story 1 Image" class="story-img">
+                <span>Story 1</span>
+            </button>
+            <button id="story2" class="story-button">
+                <img src="images/2section1.jpg" alt="Story 2 Image" class="story-img">
+                <span>Story 2</span>
+            </button>
+        </div>
+        <button id="achievements" class="achieve-button">Achievements</button>
+    </div>
+
+    <div id="story1-submenu" class="submenu-container" style="display:none;">
+        <h2 class="submenu-title">Story 1 Sections</h2>
+        <div id="story1-section-buttons"></div>
+        <button class="back-button" onclick="returnToMenu()">Back to Main Menu</button>
+    </div>
+    
+    <div id="story2-submenu" class="submenu-container" style="display:none;">
+        <h2 class="submenu-title">Story 2 Sections</h2>
+        <div id="story2-section-buttons"></div>
+        <button class="back-button" onclick="returnToMenu()">Back to Main Menu</button>
+    </div>
+
+    <div id="story-content" class="story-container" style="display:none;">
+        <h1 id="story-title" class="story-title"></h1>
+        
+        <img id="story-image" src="" alt="Story Image" class="story-image">
+        
+        <div id="score-container" class="score-box">
+            <label id="score-label" class="score-label">Score: 0/5</label>
+            <label id="mistakes-label" class="mistakes-label">Mistakes: 0</label>
+            <progress id="score-progress" value="0" max="100" class="score-progress"></progress>
+        </div>
+
+        <p id="story-text" class="story-text"></p>
+
+        <div class="button-container">
+            <button id="next-button" class="story-button" onclick="nextSection()">Next</button>
+        </div>
+
+        <div id="quiz-section" class="quiz-box" style="display:none;">
+            <h3 class="quiz-header">Bonus Quiz</h3>
+            <form id="quiz-form" class="quiz-form"></form>
+            <button id="quiz-submit-btn" class="quiz-submit" onclick="checkQuizAnswers()">Check Answers</button>
+            <div id="quiz-results" class="quiz-results"></div>
+        </div>
+    </div>
+    
+    <div id="end-screen" style="display:none;">
+        <h1>Congratulations!</h1>
+        <p>You’ve completed the story. Return to the menu?</p>
+        <button onclick="returnToMenu()">Main Menu</button>
+    </div>
+
+    <div id="achievements-page" class="achievements-container" style="display:none;">
+        <h2 class="achievements-title">Achievements</h2>
+        <div id="achievements-list">
+            <div class="achievement" id="finnish-elk">
+                <h3>Finnish Elk</h3>
+                <p>Opened the app!</p>
+                <span class="status">Locked</span>
+            </div>
+            <div class="achievement" id="avid-reader">
+                <h3>Avid Reader</h3>
+                <p>Finished Story 1</p>
+                <span class="status">Locked</span>
+            </div>
+            <div class="achievement" id="addicted-reader">
+                <h3>Addicted Reader</h3>
+                <p>Finished Story 2</p>
+                <span class="status">Locked</span>
+            </div>
+        </div>
+        <button class="back-button" onclick="returnToMenu()">Back to Main Menu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
