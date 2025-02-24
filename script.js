@@ -1,9 +1,9 @@
 const story1Sections = [
     {
         title: "Section 1",
-        text: "Kerran kauan sitten Kinassa eli muuan hyvin rikas keisari. Keisarilla oli kaunis palatsi, joka oli rakennettu kallisarvoissta posliinista. Palatsin valtavaa puutarhaa koristivat kymmenet kirsikkapuut. Puutarhassa asusteli myös muuan satakieli, joka oli ihmeellisen taitava laululinttu. Jokainen, joka linnun laulua joskus kuuli, pysähtyi niille sijoilleen. ”Voi, miten kauniisti se laulaa!”, sanoivat ihmiset.\n\nEräänä päivänä keisarin luona kävi arvovaltaisia vieraita. Vieraat kehuivat keisarin palatsia ja sen puutarhaa vuolaasti, mutta sanoivat lopulta: ”Kaikkein kauneinta oli kuitenkin satakielen laulu.” Keisaria tämä hieman harmitti, sillä hän ei itse ollut milloinkaan kuullut satakielen lauluu. Keisari kutsui palvelijansa luokseen. ”Etsi lintu käsiisi ja tuo se minun nähtäväkseni!”, hän määräsi.",
+        text: "Kerran kauan sitten Kinassa eli muuan hyvin rikas keisari. Keisarilla oli kaunis palatsi, joka oli rakennettu kallisarvoissta posliinista. Palatsin valtavaa puutarhaa koristivat kymmenet kirsikkapuut. Puutarhassa asusteli myös muuan satakieli, joka oli ihmeellisen taitava laululinttu. Jokainen, joka linnun laulua joskus kuuli, pysähtyi niille sijoilleen. ”Voi, miten kauniisti se laulaa!”, sanoivat ihmiset.\n\nEräänä päivänä keisarin luona kävi arvovaltaisia vieraita. Vieraat kehuivat keisarin palatsia ja sen puutarhaa vuolaasti, mutta sanoivat lopulta: ”Kaikkein kauneinta oli kuitenkin satakielen laulu.” Keisaria tämä hieman harmitti, sillä hän ei itse ollut milloinkaan kuullut satakielen lauluu. Keisari kutsui palvelijansa luokseen. ”Etsi lintu käsiisi ja tuo se minun nähtäväkseeni!”, hän määräsi.",
         image: "images/section1.jpg",
-        errors: ["Kinassa", "kallisarvoissta", "laululinttu", "lauluu", "nähtäväkseni"], // Bad versions
+        errors: ["Kinassa", "kallisarvoissta", "laululinttu", "lauluu", "nähtäväkseeni"], // Bad versions
         quiz: [
             { question: "Where did the emperor live?", options: ["China", "Japan", "India"], answer: "China" },
             { question: "What did the emperor want to see?", options: ["The bird", "The palace", "The guests"], answer: "The bird" }
